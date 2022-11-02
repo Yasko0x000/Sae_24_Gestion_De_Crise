@@ -1,0 +1,138 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp3933108ila;
+        Wed, 1 Jun 2022 00:45:21 -0700 (PDT)
+X-Received: by 2002:ac2:4e83:0:b0:478:6f43:e42c with SMTP id o3-20020ac24e83000000b004786f43e42cmr34622442lfr.236.1654069521735;
+        Wed, 01 Jun 2022 00:45:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654069521; cv=none;
+        d=google.com; s=arc-20160816;
+        b=a+Bew7x4eg3Ij/eQGM79y1//YJqwKnMjmbgBEzLB9re+ZGjvP3uV6cv2Zp+AlB4w/a
+         eAZ2fYeND31v80eUSILE81rhInbYYP/dQMJOq85pCYN0VPh7MfYvbrBoM5s847C+fXKe
+         1DSi9Sc8mKa+//35Pazjc01dnxQaZ/IKmLH8YSz5hkBKr90JkrpI/1vg3sJ3YT2+XOiW
+         tns1sYUkOqp8lEVZBOsE33jI0dWYV1idj/3J69EFvVbnZwquU4FG8nI2SqOLUez0Ncap
+         jFOLDRgeNF7rHcLNoUD/VgmEXA6+s8niVXMkLCEuLTK6cFxfbxwCQsz+BiLf6vOE48oZ
+         BABw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=fxXD208DcxyNp4cscUz0JK5lEhbcOQ0HR+Kiim1xyEU=;
+        b=SkxykwTTJhfRUVOc61YfcX4LGMTBxNzUbJcarhxsR+pXTMLUJEUACAjP223ZRk0CvS
+         pu8NgDxyHNDVAHN0aLHyU2U+6QmBQZYikFyhPVrDlJG0LR+EJ1zE84gqJJfNNmo5Trdk
+         wEvrO3NgsafKzjkHk2+lLs3ZuFEL40p3ula+yb0R2yBMzNTNcOkOGDwOXDYte/XPvYfN
+         lBYAtVhlTIoEklM1jacfibXq5Oax6e5o3mMxrLSBKkewAXQeu9uFsqu46NyhxC7SS4QO
+         SCpNG9YtX/CsNBDxfjUf2+JE7NBiJNH9WWtHphHFhhCDOKxa2MCjKKnDwKSzKvbDEam2
+         Nw7Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=Xt0atUvd;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id r5-20020ac252a5000000b00478f3b97436sor191011lfm.2.2022.06.01.00.45.21
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 00:45:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=Xt0atUvd;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=fxXD208DcxyNp4cscUz0JK5lEhbcOQ0HR+Kiim1xyEU=;
+        b=Xt0atUvdTlExI00HE9VkiFEiUywbsJ64pyqGJ+CcUFNonKXcWpnc0HWBo+672vTBMy
+         qa7ogrKqAwzzS3a7EyCEVHkMgVWLDIcmMEyUxwUEe6i0axg9qbjELNBDziaKJlSKZlIX
+         pUTIH+BpPF7i8rq+35Q0POs7L1WtfqDUQ13IJOH45c8XsO6wAFZbXEzY3xzIPB08+RS4
+         KPwwIANRKKaDYCErGjG4sUk8fK629XMKotLwRqI86EeglSLRFBIDdVu2Th19kbsxri1y
+         onnf0MNKZ+yrEW3TG4pTaZP3UUbDYtQNl3JMC9lP5ToNhOK2Gei9+bGamCjEWjSwIt1g
+         QraA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=fxXD208DcxyNp4cscUz0JK5lEhbcOQ0HR+Kiim1xyEU=;
+        b=hxjxHsMoz+YjqrC4jDdLoFRUEIRTgpkH7GBccR4pp7EVJz3HAcBMRyhru2IIaEmNqR
+         1tlqRWdeuTy0uEreM7aiZ+C+xnwhjxdl2/lDoAY92I6/rcFuWEac+myxF9xf3jXEfPWv
+         hfUQCzn3vbDvJLvD37tbygyB7BNhtQXR+fXGDEgDhgbY39OjKw/EScRHAr9Fap/h2TgT
+         pRBFYuZemus+ECWkfPM4d5BNU34yMK4XtnkNHuENL8aWLh37HmVYMCt/nUC9Cr+Lsqi4
+         we47Ktdm9nrY0NboaRX/IFKiHkmHx2TBRxW4bbHIaO0++NdclYPCzu9TjTkjbvVQfcx2
+         R0XQ==
+X-Gm-Message-State: AOAM530ZGVvppVAi5GvPRAdqRoXw8G81Hp3oAIa3qf6QPAbcX6HsgCk7
+	7hlR82eSP3vZkKPJJC7GAf26QT0m5lA8xwErB1OWPDEyAVC62A==
+X-Google-Smtp-Source: ABdhPJwNd2yY1gSn2GdXb4AbJ8ca01vCotG6eq2A2isnD/VjKgLUfPP97dBzljbkQkPb6EE+ydOBeYlDhYBXlIYkpG0=
+X-Received: by 2002:a05:6512:2a92:b0:477:bbff:fc3a with SMTP id
+ dt18-20020a0565122a9200b00477bbfffc3amr45124323lfb.544.1654069521424; Wed, 01
+ Jun 2022 00:45:21 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 09:45:10 +0200
+Message-ID: <CAJ592SpyoiEOFt5cP=YUGKxUXXpCsmF7bKVSD-nY18_wHpOG+g@mail.gmail.com>
+Subject: =?UTF-8?B?bGVzIGRlcm5pw6hyZXMgaW5mb3MuLi4=?=
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000004223f205e05e1237"
+
+--0000000000004223f205e05e1237
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Nous avons re=C3=A7u des =C3=A9l=C3=A9ments de la pr=C3=A9fecture du d=C3=
+=A9partement des Ardennes.
+Selon
+le concierge et au regard de la pointeuse situ=C3=A9e dans la loge, il y av=
+ait
+31 personnels
+dans l=E2=80=99usine au moment de l=E2=80=99explosion. Les services de d=C3=
+=A9minage sont sur
+place. Pour
+l=E2=80=99heure on recense 4 morts et plusieurs bless=C3=A9s.
+=C2=AB Le chef du SDIS des Ardennes a =C3=A9t=C3=A9 interview=C3=A9 par =C2=
+=AB I T=C3=A9l=C3=A9 =C2=BB. 57 sapeurs-
+pompiers
+sont engag=C3=A9s sur les lieux du sinistre. Les secours fouillent les d=C3=
+=A9combres
+de l=E2=80=99usine, des
+chiens sp=C3=A9cialis=C3=A9s sont =C3=A0 l=E2=80=99=C5=93uvre. Il annonce 3=
+ morts, 8 bless=C3=A9s dont 2
+avec pronostic
+vital engag=C3=A9. Les recherches se poursuivent.
+
+--0000000000004223f205e05e1237
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page120R_mcid14"><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r">Nous avons re=C3=A7u des =C3=A9l=C3=A9ments de la pr=C3=A9fecture du d=
+=C3=A9partement des Ardennes. Selon</span><br role=3D"presentation"><span s=
+tyle=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D=
+"ltr">le concierge et au regard de la pointeuse situ=C3=A9e dans la loge, i=
+l y avait 31 personnels</span><br role=3D"presentation"><span style=3D"font=
+-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">dans l=
+=E2=80=99usine au moment de l=E2=80=99exp</span><span style=3D"font-size:20=
+px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">losion. Les se=
+rvices de d=C3=A9minage sont sur place. Pour</span><br role=3D"presentation=
+"><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentatio=
+n" dir=3D"ltr">l=E2=80=99heure on recense 4 morts et plusieurs bless=C3=A9s=
+.</span></span><span class=3D"gmail-markedContent" id=3D"gmail-page120R_mci=
+d15"><br role=3D"presentation"><span style=3D"font-size:20px;font-family:sa=
+ns-serif" role=3D"presentation" dir=3D"ltr">=C2=AB Le chef du SDIS des Arde=
+nnes a =C3=A9t=C3=A9 interview=C3=A9 par =C2=AB I T=C3=A9l=C3=A9 =C2=BB. 57=
+ sapeurs</span><span style=3D"font-size:20px;font-family:sans-serif" role=
+=3D"presentation" dir=3D"ltr">-</span><span style=3D"font-size:20px;font-fa=
+mily:sans-serif" role=3D"presentation" dir=3D"ltr">pompiers</span><br role=
+=3D"presentation"><span style=3D"font-size:20px;font-family:sans-serif" rol=
+e=3D"presentation" dir=3D"ltr">sont engag=C3=A9s sur les lieux du sinistre.=
+ Les secours fouillent les d=C3=A9c</span><span style=3D"font-size:20px;fon=
+t-family:sans-serif" role=3D"presentation" dir=3D"ltr">ombres de l=E2=80=99=
+usine, des</span><br role=3D"presentation"><span style=3D"font-size:20px;fo=
+nt-family:sans-serif" role=3D"presentation" dir=3D"ltr">chiens sp=C3=A9cial=
+is=C3=A9s sont =C3=A0 l=E2=80=99</span><span style=3D"font-size:20px;font-f=
+amily:sans-serif" role=3D"presentation" dir=3D"ltr">=C5=93uvre</span><span =
+style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=
+=3D"ltr">. Il annonce 3 morts, 8 bless=C3=A9s dont 2 avec pronostic</span><=
+br role=3D"presentation"><span style=3D"font-size:20px;font-family:sans-ser=
+if" role=3D"presentation" dir=3D"ltr">vital engag=C3=A9. Les recherches se =
+poursuivent.</span></span>
+
+</div>
+
+--0000000000004223f205e05e1237--

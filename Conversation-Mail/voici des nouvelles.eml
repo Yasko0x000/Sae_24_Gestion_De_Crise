@@ -1,0 +1,134 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp3969559ila;
+        Wed, 1 Jun 2022 02:10:24 -0700 (PDT)
+X-Received: by 2002:a05:6512:ad2:b0:478:623e:ca73 with SMTP id n18-20020a0565120ad200b00478623eca73mr37176392lfu.290.1654074624224;
+        Wed, 01 Jun 2022 02:10:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654074624; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pmR1SKSgocgB9djvB++flF3BjaykZuGTsDFLd5cs761+oQdeWa72fxz531SOzmumFz
+         odGBLT1R6ZrA4IdtyWp61/MFMk7QpoDtAzbJ5pzQkVATWxC3M/NqmuHdPOBsXytUe6J9
+         /hmAuc5ggo9Gts1mm9KrXp/Je4C6qt0+xQeiVoByzXYacYXz2B2PfjfA3dT1OPrTphOZ
+         ht+nO/lEaYMaj3tln9wSCTrng5gIpH7zC2fqqQlZjlWyb618t5O4R7Rqzooz3wq17L4j
+         snHLDC/NIexZEpbr9aAUH+3zmyz32OC8TWw3SYE6RgikVx1nRedWNKW8N7G3tVeTwhz0
+         oxTw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=2M/eGS91nsKgx6b6+Lp8AxADLETASD/+y8tPJxl1574=;
+        b=WOC+x9oM19PSUpqe8aBWLMN6u2gPsJzRM8zhSg6qZNej5qcGrQA8uWEPBkAdztaYh8
+         XCo5KO1QvizI5Iqubqh/Bi8dQeuMzTLDDUIlk3JujeIt6tfTQud+FhUUydvw7JRCx9gR
+         5ag37hj3uDzH23ZiirFFynA+kZsk2x1zc/qWrd8rzZf/tJs5uVe/7xrHoWAme9akjRYM
+         91GHyywjobksvuVu+t+vywJCV2b8DBEpOxsWRBvrrq3xYD0spx4Mc371G8gmUGiu4GHg
+         GSJJPVNuAn9LRKYFwlhqICk8/C6Ft8AcafYUPvIgX0XqVPjfzkJOSfvLYoKEKFCzEZin
+         k1Uw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=FTOtTwEo;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y14-20020a19914e000000b00477bf817c01sor285301lfj.147.2022.06.01.02.10.24
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 02:10:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=FTOtTwEo;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=2M/eGS91nsKgx6b6+Lp8AxADLETASD/+y8tPJxl1574=;
+        b=FTOtTwEoqyek06tqGBRIwe/d1ARai4WWkI21HCDNHv5Re82M/0izVJDTG00dgItFko
+         i9Z4BarFJKDCg3/dM7qH5Dn61syGzzCEPBwY5pnmG0kAEUYt3JpY8FzljwtCNdXb/A6M
+         8WZHuIf9S+0gL+SYYfWxQJKu1u1RcpsNyKsmkJpJxMzI4w2WzVkqcZpxfhEdPdmIg80H
+         J3RVamcQSFryITaUQZeioHoFkeNKsq1/4HLbBOlPdGN848fMF5xmL6MyCkWeq0XqDg77
+         bxlKV7jk8jU6WZqpHFFagdsv42fgPsaariLkicEdqpmmDy6uI+Fno6T4KZqLC4ms/W2H
+         3Pdg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=2M/eGS91nsKgx6b6+Lp8AxADLETASD/+y8tPJxl1574=;
+        b=s3E1/U4zBGNdshDsRXZhC3bynX7b5bEcc5LosbulD1M47ckrclSPYS15TnLm8HWgDh
+         Ca/SWqRysAmUA+D0iy+U1rI8sN3pgUiiQAWmLc10cnI5su/jcIqPIEs8uPHpAaoJLE8F
+         Nqpg6ir059bOtatR+DwXqruUsHsFDXFyQxpt45opY3tfrRYl6VFqvTntA3qM74XiF7rB
+         T2wfFt77tqnHTMElJRnXVPIo3iKzk8m6OlG8VBgsE0T7qRehWiju4yFVKhCHjhrGZrvs
+         mczXgKrVufKlTeXlorcDg1LCkFTyMzOlHI2Uz9ty+ojrW1zEL9VDGaODDNQAnJzxF3p7
+         PGcQ==
+X-Gm-Message-State: AOAM533eExYWtE0BV3pVdRGG7g38S6TxpoV24Wgpr3lKqsJ7CQV289LY
+	DNes0QoxA7vmnO7rlwGX2QfZulHs1hzNB2OjYZgB30Uyj4LVTQ==
+X-Google-Smtp-Source: ABdhPJy1/6j3Gf9yANzkAw16n6yQCCf9FQT+gnu6IkXBjnmxZPfS8LBA/aA2xODJ1OYuciV4tLnF/EC63/gnBmZVrkU=
+X-Received: by 2002:ac2:4c53:0:b0:478:6908:c76f with SMTP id
+ o19-20020ac24c53000000b004786908c76fmr35681200lfk.634.1654074623876; Wed, 01
+ Jun 2022 02:10:23 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 11:10:13 +0200
+Message-ID: <CAJ592Sog=VLa7Q8Mz6HxR-yPFeZ0d1-QdFRufDOeowWRi75HNA@mail.gmail.com>
+Subject: voici des nouvelles
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000063632305e05f42bb"
+
+--00000000000063632305e05f42bb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ La pr=C3=A9fecture vient de communiquer un nouveau bilan provisoire : 5 mo=
+rts
+et 8 bles-
+s=C3=A9s.
+D=E2=80=99autre part l=E2=80=99=C3=A9pouse de M. BOQUET vient de nous appel=
+er en pleurs. Son
+mari s=E2=80=99est
+jet=C3=A9 par la fen=C3=AAtre du 4=C3=A8me =C3=A9tage de l=E2=80=99h=C3=B4p=
+ital Manchester =C3=A0
+Charleville-M=C3=A9zi=C3=A8res.
+Il est
+mort.
+Elle a =C3=A9t=C3=A9 pr=C3=A9venue par l=E2=80=99h=C3=B4pital, elle est bou=
+levers=C3=A9e et ne comprend pas
+ce qui se
+passe
+
+--00000000000063632305e05f42bb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page124R_mcid42"><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r">La pr=C3=A9fecture vient de communiquer un nouveau bilan provisoire</spa=
+n><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentatio=
+n" dir=3D"ltr"> </span><span style=3D"font-size:20px;font-family:sans-serif=
+" role=3D"presentation" dir=3D"ltr">: 5 morts et 8 bles-</span><br role=3D"=
+presentation"><span style=3D"font-size:20px;font-family:sans-serif" role=3D=
+"presentation" dir=3D"ltr">s=C3=A9s</span><span style=3D"font-size:20px;fon=
+t-family:sans-serif" role=3D"presentation" dir=3D"ltr">.</span></span><span=
+ class=3D"gmail-markedContent" id=3D"gmail-page124R_mcid43"></span><span cl=
+ass=3D"gmail-markedContent" id=3D"gmail-page124R_mcid44"><br role=3D"presen=
+tation"><span style=3D"font-size:20px;font-family:sans-serif" role=3D"prese=
+ntation" dir=3D"ltr">D=E2=80=99autre part l=E2=80=99=C3=A9pouse de M. BOQUE=
+T vient de nous appeler en pleurs. Son mari s=E2=80=99est</span><br role=3D=
+"presentation"><span style=3D"font-size:20px;font-family:sans-serif" role=
+=3D"presentation" dir=3D"ltr">jet=C3=A9 par la fen=C3=AAtre du 4=C3=A8me =
+=C3=A9tage de l=E2=80=99h=C3=B4pital Manchester =C3=A0 Charleville</span><s=
+pan style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" d=
+ir=3D"ltr">-</span><span style=3D"font-size:20px;font-family:sans-serif" ro=
+le=3D"presentation" dir=3D"ltr">M=C3=A9zi=C3=A8res. Il est</span><br role=
+=3D"presentation"><span style=3D"font-size:20px;font-family:sans-serif" rol=
+e=3D"presentation" dir=3D"ltr">mort.</span></span><span class=3D"gmail-mark=
+edContent" id=3D"gmail-page124R_mcid45"></span><span class=3D"gmail-markedC=
+ontent" id=3D"gmail-page124R_mcid46"><br role=3D"presentation"><span style=
+=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr=
+">Elle a =C3=A9t=C3=A9 pr=C3=A9venue par l=E2=80=99h=C3=B4pital, elle est b=
+oulevers=C3=A9e et ne comprend pas ce</span><span style=3D"font-size:20px;f=
+ont-family:sans-serif" role=3D"presentation" dir=3D"ltr"> </span><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r">qui se</span><br role=3D"presentation"><span style=3D"font-size:20px;fon=
+t-family:sans-serif" role=3D"presentation" dir=3D"ltr">passe</span><span st=
+yle=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"=
+ltr"></span></span>
+
+</div>
+
+--00000000000063632305e05f42bb--

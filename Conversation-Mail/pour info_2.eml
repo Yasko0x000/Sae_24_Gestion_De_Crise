@@ -1,0 +1,104 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp4006645ila;
+        Wed, 1 Jun 2022 03:25:57 -0700 (PDT)
+X-Received: by 2002:a19:5f1d:0:b0:478:f072:8dc9 with SMTP id t29-20020a195f1d000000b00478f0728dc9mr6268359lfb.440.1654079156591;
+        Wed, 01 Jun 2022 03:25:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654079156; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VC69WvvFbZ1lufFLD2pa+KxbHbzmkWAQ/YrjUNdqwv2k6jg6krtoFxfCnu1cX7vPPe
+         FB/mb0tNnh7ycb1eexZX7u8aJe7BIRrsb5csAH0sKaPTH1cHO1VG0xA8gq4gvI3RCk8u
+         JeS7NU9tfuwvs8prP+y9vr6pfav+NzKEZool40Ue3RokYm4oWsYZKZZod0MxR8G2meBd
+         /tUrx3zEEu/C61Ltb5YUca4/GeeZAPdBsXAAgCU4Z+RRUKFUSrwDMFPdWmv2/yyx+p4y
+         EjE828xb2JSKdKuz9lCfj+3VBYgKGzIYn4iiL93BlZZsNuulGNDRNrDVplQhPOvY79tI
+         3G4A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=BYfR7MllKze5lgumbWsW76eHLIP1MPXYYIANfrv6QYg=;
+        b=jiLn5dXz3lqDfsFKuRizZea6dNcbxF+K3poq4zd2XaIS+uLTRU7fZ2nk/QdNsFMcTu
+         0JShKLmYZiEk9lR/X4CRc9LXs32I6pMOO+ueQxwRsb4RCmhl7MoDV9/IRSavJeVzDr2N
+         PmxM5LKqvGgviVDu3FZ5DWEX/y+PjkFmCO4MaqGMzFW58HfAeGtKz5n8NgP+mFm/JS8k
+         mSeHX5N55FlJ5zo8EIDE23eV+06oqKB3qYub6FzO7Q6bgA4iIKlv1smd3v/PYQTANcNF
+         +fAXwj1AvymXAyP22BS0r+pToh3MvTX98jV+GC4DD3CxBeDSOBcju8tRCW4lAlqKIjmX
+         FAng==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="PuG/r7s+";
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id v23-20020ac25937000000b00478f1faabd9sor317743lfi.85.2022.06.01.03.25.56
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 03:25:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="PuG/r7s+";
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=BYfR7MllKze5lgumbWsW76eHLIP1MPXYYIANfrv6QYg=;
+        b=PuG/r7s+gui5exSl/f1B95k/4L+pbpOasRL3Sc2mgeU3nyKipUlUxfCJ3q7IT4d0SU
+         Xw9Q11IzanXXU3GdoE0SNvJ/QjpJI5rRaD3aufvXF4Gs0x8MtFCNqlVuDZcwRnnM1HWH
+         cL6TwdAVVFXG8HhxM7uc8WkQ7Opaw7M5cbs6O70TznHNq2Ae4Np3TZ2ODU1KFxKV+/y8
+         jxv9uM6jyeTU6T/UCQhgGzdjEWBvkNviDTyLAWPZ5INUCrgy70P6OdmQCqvN+5ISaSfU
+         u9hlsPAUDihMNzLNY1WLP+BnTrjXxaSPfU/kSDiIunuvAjPSDralaWUyKdbDVd04vuQ/
+         +QQQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=BYfR7MllKze5lgumbWsW76eHLIP1MPXYYIANfrv6QYg=;
+        b=vwBs1s5CKOq3L3iYAzX8r/8Cfyj7v7mf35RV62HwKRfryN4S0gYGb2vj6k2wV9SsjO
+         YXo8MEMkUCtGs7U/eMMu73NiHRV5shpsk+ukrVV5S1fdOw10F7Izx6lzcFlD4Qn4n5je
+         XcCKxrqkUbSbY0/fYXt/ExTUPJ8AFwbLX4+6+jciCZqxsrnHuj/qN9VyHA0GU0hUR41I
+         zyXeg+sW5dm+eVtBpDwD3oxvwijDq/x8DNNmV3dDSKlhJ6wjEIPeXbr8reh+5K6G/BQm
+         V9ZIgm7I+JslwG+ORtPFL3+CZ1QtuGuaVz19QngVflzBTeFk4vXWwKxTFhMhzW9+wKGg
+         Y8rQ==
+X-Gm-Message-State: AOAM533ZaoW7blgpdw8ZpnkXzKjEgy4QErmpdlV/6mKEu7mXrmbv5HXt
+	5x9qKERvdgt9YLvSpdjkql+AcNznHZ+eYEWkAG+UPtXc9KpTkw==
+X-Google-Smtp-Source: ABdhPJw/YcnFTRQvGHaFN799xf1/ck41p4yNYVuuedXMy8NXpRoqzHtjL3i+Q/edXlySgAmfza8C9EeyR/ERMD2hfhA=
+X-Received: by 2002:a05:6512:12d4:b0:478:fe92:a519 with SMTP id
+ p20-20020a05651212d400b00478fe92a519mr3370720lfg.463.1654079156239; Wed, 01
+ Jun 2022 03:25:56 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 12:25:45 +0200
+Message-ID: <CAJ592SprH7MPydERN_3+gMubtUHSriwo3cA_wAv__6NvvR5fMw@mail.gmail.com>
+Subject: pour info
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000089c20305e060502a"
+
+--00000000000089c20305e060502a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Les d=C3=A9mineurs ont termin=C3=A9 leur travail (source pr=C3=A9fecture).=
+ Rien n=E2=80=99a =C3=A9t=C3=A9
+d=C3=A9couvert. Les
+sp=C3=A9cialistes de la police scientifique d=C3=A9butent l=E2=80=99examen =
+des lieux
+
+--00000000000089c20305e060502a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page132R_mcid18"><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r"></span><span style=3D"font-size:20px;font-family:sans-serif" role=3D"pre=
+sentation" dir=3D"ltr"> </span><span style=3D"font-size:20px;font-family:sa=
+ns-serif" role=3D"presentation" dir=3D"ltr">Les d=C3=A9mineurs ont termin=
+=C3=A9 leur travail (source pr=C3=A9fecture). Rien n=E2=80=99a =C3=A9t=C3=
+=A9 d=C3=A9couvert. Les</span><br role=3D"presentation"><span style=3D"font=
+-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">sp=C3=
+=A9cialistes de la police scientifique d=C3=A9butent l=E2=80=99examen des</=
+span><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presenta=
+tion" dir=3D"ltr"> </span><span style=3D"font-size:20px;font-family:sans-se=
+rif" role=3D"presentation" dir=3D"ltr">lieux</span><span style=3D"font-size=
+:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr"> </span></s=
+pan>
+
+</div>
+
+--00000000000089c20305e060502a--

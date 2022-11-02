@@ -1,0 +1,129 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp3905896ila;
+        Tue, 31 May 2022 23:43:50 -0700 (PDT)
+X-Received: by 2002:a05:6512:398f:b0:477:c3cd:e009 with SMTP id j15-20020a056512398f00b00477c3cde009mr46487903lfu.164.1654065830487;
+        Tue, 31 May 2022 23:43:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654065830; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XyGd2QrQYGgkBaml1uzj+Sn+4m2+sXKkc3056n/JOzymcIjELM6pVKBl4B/FJ+1mhu
+         Dw/A1vwiLjLzWshHp7hocvIIxJUhsqIk+iwa36J6H74B4ruwgvP2/ZOCJVtVmRuA0Cec
+         mGCUtBCw4r2Vk9D/TjGON8jJfNU3RAMOlqqP15gwtzqBff8binvw27mjJadCp22Q0k1f
+         j6xAJfBCAO6q+gnkDcOP/+eZOv+j83v63zdR2vnaydHEndm8x8nRqHMW1LHz+/8h0NfP
+         qt33A/Et2yCgmZWZUc7JABYIkaE7/Hhu+oiCtlGV3Ni8JsUudCcDqiHMuNyTBYnpjuGz
+         T0sA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=2fbsWbZDMknrtaKibF8iQZ/gML5I6DXmiM0GuZVQ+Lc=;
+        b=0sNGsnjrmbTCGhiqK5UypdgBEmxlD5eYUe3N00Pcnl7gC29F05B/p3f3dfWUa+Dmv2
+         QNqtraiPevytfAzKZ/67WjSSXwrr4dbvEDqby72FdWr17VSFbBw0sNJHTt1xFqIQk7w4
+         1IM1v4tTJOYnanxzhewD4YsY6t4hBkehym+EoolwjgcZYTe+8KJnQ1wXqCef/wKFoGHO
+         HRqiU4ziqDmLbGxYaHIo9zWOUhuDTuS57FUxac79cm/zkdtnJqD7nV7GJKR/crjVcFG0
+         X3yHsObJWdwOKSSJseX8Sf0pHzHHURFJ9iwyQjSKSfOIeg50jCeh8/gp1U24c//ZF+K2
+         INXA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="E/QEqG5e";
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y11-20020a19640b000000b00478ffe72ac3sor174373lfb.80.2022.05.31.23.43.50
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Tue, 31 May 2022 23:43:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="E/QEqG5e";
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=2fbsWbZDMknrtaKibF8iQZ/gML5I6DXmiM0GuZVQ+Lc=;
+        b=E/QEqG5eoIQFSGvpjrN4vZAkSiuQ97IuNrhk1o5dzJlKQB52BV6Y2+ij0WdAxYFqBC
+         R7jhQh7avLBS+Exqi6EvfW3AYVO1KIuep8e+XQfS7Jcp11L9VdQqHLbkNtnno++s/MrL
+         imOJLxWITY629mZ1N400np+w0BBAuTN/pwUimUAY2xra1y6TvULc4Ib3CrG1iL94WEir
+         QkSYpqU9FO1IL8R/JlxTaY6ez3OWtU5NokhAdb1zKsI9jLGih85+l/ow91bNm1nNM24h
+         3y+lPojdI8JNxkvRRKbTSgBb5MdKUlQisY+TVipuMS694DgKXhqS33RGhCXZuAMLfDQe
+         YpQw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=2fbsWbZDMknrtaKibF8iQZ/gML5I6DXmiM0GuZVQ+Lc=;
+        b=lpssqM28h6OSqMoUWZYrRwPPo8+ao61mcT8s7OXamXEARxdQEJx/5Srgv4nvJh4DlM
+         BPP4scSs0QaVrcIjM7h0jf9nIiTigs1PUaRWgp+SBRd/MifN1Oelh1i+GCdrH4oANk5R
+         hgoxxKkO3KdMOGOVBq8NTj9CX2pnlnQEk33dqrZJg50/KZ3IescoStS1kub4s4/xMDmd
+         083zpfvexvvb9+qa38cx+YiAAusr3ilOehYBWwvEVc8LAP1W9KPJ4sIyoMmCJlv4dtuY
+         ssTWMPVI+qHZ8aZRPwBE7d6T6JDeYpio8C5iSk0dmURXiJAWSbR/i8ZhqAGc4M6VuFHK
+         zDPA==
+X-Gm-Message-State: AOAM532EEJkCe1gqKi/s+6Qp4gAIEzs+JnhuMDb7U/YiM/H8fmzfZCPo
+	i5qJEeZVPYsq279xfkxlivW/TGQybzMAGBCk4gmKqHPWECU=
+X-Google-Smtp-Source: ABdhPJxiPkAMAKy8yYeie4kpcGPYe0UwMhtWh5J4f+WruLyDsLXgD1XEmWeCpOzcQWgvPNSMLApY2odFqT+gmK7uQM8=
+X-Received: by 2002:a05:6512:2a92:b0:477:bbff:fc3a with SMTP id
+ dt18-20020a0565122a9200b00477bbfffc3amr44975683lfb.544.1654065830202; Tue, 31
+ May 2022 23:43:50 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAH=-nxF9SR1-_BwrQegXm6XRFvJc+pN4-JH5f8Q=ozsG2MvSsg@mail.gmail.com>
+In-Reply-To: <CAH=-nxF9SR1-_BwrQegXm6XRFvJc+pN4-JH5f8Q=ozsG2MvSsg@mail.gmail.com>
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 08:43:39 +0200
+Message-ID: <CAJ592Sr0fzNPWDDTuJu2TwYZ0XjDSD_Vk_pLdwDMbLMtrfvYqQ@mail.gmail.com>
+Subject: Re: Gestion de crise: organisation
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000003e90ad05e05d36c7"
+
+--0000000000003e90ad05e05d36c7
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bien re=C3=A7u, pas d'information, nous g=C3=A9rons
+
+Le mer. 1 juin 2022 =C3=A0 08:39, groupe_vert_inicrisis <
+quatrgroupe.inicrisis@gmail.com> a =C3=A9crit :
+
+> Bonjour Madame Vivier, vous trouverez ci-dessous l'organisation de notre
+> cellule de crise (Groupe vert):
+>
+>
+>    - Mat=C3=A9o Hisch - 0679967956 - Leader suppl=C3=A9ant
+>    - S=C3=A9bastien Didier - 0621565159 - Leader
+>    - Aline Parr=C3=A9 - 0695565317 - Analyste
+>    - Yassine El Hamioui - 0784676854 - Analyste
+>    - Adel Bouras - 0669402605 - Charg=C3=A9 de communication
+>    - Enzo Bizet - 0768582269 - Analyste
+>    - Vincent Bardot - 0677839107 - Charg=C3=A9 de communication
+>
+>
+> =C3=89tant donn=C3=A9 l'absence de r=C3=A9ponse de la part du directeur d=
+e site et de son
+> adjoint, auriez vous des informations concernant la secr=C3=A9taire, Mada=
+me
+> Sabrina Drissi.
+>
+
+--0000000000003e90ad05e05d36c7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Bien re=C3=A7u, pas d&#39;information, nous g=C3=A9ro=
+ns<br></div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"=
+gmail_attr">Le=C2=A0mer. 1 juin 2022 =C3=A0=C2=A008:39, groupe_vert_inicris=
+is &lt;<a href=3D"mailto:quatrgroupe.inicrisis@gmail.com">quatrgroupe.inicr=
+isis@gmail.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gm=
+ail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,=
+204,204);padding-left:1ex"><div dir=3D"ltr"><div>Bonjour Madame Vivier, vou=
+s trouverez ci-dessous l&#39;organisation de notre cellule de crise (Groupe=
+ vert):</div><div><br></div><div><ul><li>Mat=C3=A9o Hisch - 0679967956 - Le=
+ader suppl=C3=A9ant</li><li>S=C3=A9bastien Didier - 0621565159 - Leader <br=
+></li><li>Aline Parr=C3=A9 - 0695565317 - Analyste</li><li>Yassine El Hamio=
+ui - 0784676854 - Analyste=C2=A0</li><li>Adel Bouras - 0669402605 - Charg=
+=C3=A9 de communication</li><li>Enzo Bizet - 0768582269 - Analyste <br></li=
+><li>Vincent Bardot - 0677839107 - Charg=C3=A9 de communication <br></li></=
+ul></div><div><br></div><div>=C3=89tant donn=C3=A9 l&#39;absence de r=C3=A9=
+ponse de la part du directeur de site et de son adjoint, auriez vous des in=
+formations concernant la secr=C3=A9taire, Madame Sabrina Drissi.<br> </div>=
+</div>
+</blockquote></div>
+
+--0000000000003e90ad05e05d36c7--

@@ -1,0 +1,114 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp4104774ila;
+        Wed, 1 Jun 2022 06:20:38 -0700 (PDT)
+X-Received: by 2002:a2e:84c8:0:b0:24b:50bb:de7d with SMTP id q8-20020a2e84c8000000b0024b50bbde7dmr37258414ljh.40.1654089638423;
+        Wed, 01 Jun 2022 06:20:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654089638; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ILV4PptyJ4VlutYGaXLICLYURU0cOJxiDQpmm5hAyxAcszA/1TrFfn10dBMsvgdZR7
+         GT8JPz9Vxd0jMueNFx1B+J3Fp/bjg3mDbTPiwJLMUIfvXawPQCjHRDZ6Rvpy4PAnlPAr
+         4e2daiFy/E4UFBoZ9RWL7GEPuPP0HFMhmM7MSAEm16aDmu/uAtW/xB+3wLeZEjhiW1aJ
+         uP768v8xYrgJk0wdCYy+22n7Zy+CDJwQ6mbzVxvq53uEAZLET54+hwg6XtcVgGm6M9Tm
+         YLTLSAomtzdYcjqR4BdcEjgiAyNlFQTOlhbxZCque7cdSe7i/DGf5eJ55KLI9VAQipOQ
+         kYRQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=cJs+YpcJd/7he/5Uvs2YCpI7dLIKN5g6PH40IdY6sFk=;
+        b=EV/8l8dDNjC0o9bFnxftfkmcRSO/g+hmVXZyu/kpA5vRpQryT3jj8jRQm65RLRGiFI
+         GP3edUS35Z5OdOF8PYLEsO3q1u8TCohAiEJtvysD41OPEnsDvUYNIlq5/KyFwaTBuC5V
+         g7IvxU68XeOMPLlk6CN3+CvqHiy58ePec28EJIO2Bwp8IXa0kZvdCpQ2BKFFLDn7K22R
+         4FQf9ByH+/R4jxhILk87UreFGERXXbK9J/wIhC1AKKn9EiAPBBJGB4hyw06BXy2C14If
+         cKnyladKuhUGvLwNc6ETHyHRTKDbZJtFwWmplpUima7vIqRH5xPJiwU79L0l0C7F3JLa
+         H/3Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=L+JeTuss;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id u10-20020ac2518a000000b00478c68301f2sor444250lfi.4.2022.06.01.06.20.38
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 06:20:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=L+JeTuss;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=cJs+YpcJd/7he/5Uvs2YCpI7dLIKN5g6PH40IdY6sFk=;
+        b=L+JeTusso6ybsPYcOuZryIxbQJvyuBu/7jTugIDor3JPIfyyaaXxul2ZJ88qtFU8SN
+         StaKERM39nI2uAXfCGmtBQLYcCrYYJSGMzCtOQ1VfwS8xCD+MSOW/TCPNPTQMTwz7Qo2
+         vRzIWgS9mrvtHwTE46Og33mVFa3KTRNHjS8/2/ALSCapsf0Stt9M/gvZP4f6J6NE1MPI
+         3Xtgt50Pakt59oWhMe4pvK1BIgo6H2goFBoZ3OM2Lp2pJaWFsvwB8l8DshbmVACFS2Ls
+         Aj9OkfOel7hGwlRsL51BCtfU1nPI3b4poFprH25EIOUq7JUJBtEKVnC/RvjHCMn/daMd
+         w5/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=cJs+YpcJd/7he/5Uvs2YCpI7dLIKN5g6PH40IdY6sFk=;
+        b=lsNQgPTEPXFZXd4u10ei11ukKeqCFQ0oB1ze3Zg1VADv/tiEC0jJxLDxfxuh2Ze+qj
+         qJ0RkTC+9EB1PcIr+GZi2XxytUSXz4RgohJelLTtBnyKJzMZiuaS9ZY2jr5eTatqlhH0
+         4ZphyPIMuEWB3BnjOo2QriJEprLDT28TpWUwOpWMukAlfo+h/GCWsZgatlovOamvW8IX
+         gPQGhGiB7GqFHCs0oNNGJBJ9KuvYss+SXShGiHqZW7XDIpCRUcMCN5Dz659Db4pmNU5A
+         AnXF0qVJBg2UQOuo+L5EBv3vPTR5yAm3MtM0bZHzAJaUNqcuxUWq6pb+uVHl+s56aPVC
+         YGdg==
+X-Gm-Message-State: AOAM532/yAp9vRqqu97w1wwiIkRhLSrYConPM82hwaiaS5T5ZA28nb/p
+	t1xJEaqotdOblnaq3ecCcYrYYC7/0epKar/83MvvRpohWzcFaQ==
+X-Google-Smtp-Source: ABdhPJy2fxsa8p8HSUqlKUbY16cmX0YvXHX3zAMSxC/sJWtzDHBpCgplKcjfYTzdVOTcJ7yoGT7tZHdAoPCQadeqduE=
+X-Received: by 2002:a05:6512:2807:b0:477:b906:81af with SMTP id
+ cf7-20020a056512280700b00477b90681afmr48413605lfb.299.1654089637894; Wed, 01
+ Jun 2022 06:20:37 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 15:20:27 +0200
+Message-ID: <CAJ592SpSE4za6=euN5F6kXndrBKmUNN_ObY-DP-+VhBP1r+udA@mail.gmail.com>
+Subject: info importante
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000004b1d9505e062c115"
+
+--0000000000004b1d9505e062c115
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Le quotidien r=C3=A9gional =C2=AB l=E2=80=99Ardennais =C2=BB vient de publ=
+ier un article sur son
+site internet r=C3=A9v=C3=A9lant que parmi les victimes de l=E2=80=99explos=
+ion de la fonderie
+Calmine S.A de Charleville-M=C3=A9zi=C3=A8res figurait trois salari=C3=A9s =
+de nationalit=C3=A9
+Roumaine sans contrat de travail.
+Cette accusation est grave. La soci=C3=A9t=C3=A9 peut =C3=AAtre condamn=C3=
+=A9e pour cela. Nous
+n=E2=80=99=C3=A9tions pas au courant de cela au niveau de la direction g=C3=
+=A9n=C3=A9rale
+
+--0000000000004b1d9505e062c115
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page152R_mcid76"><span styl=
+e=3D"font-size:16px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r"> Le quotidien r=C3=A9gional =C2=AB l=E2=80=99Ardennais =C2=BB vient de p=
+ublier un article sur son site internet</span> <span style=3D"font-size:16p=
+x;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">r=C3=A9v=C3=A9l=
+ant que parmi les victimes de l=E2=80=99explosion de la fonderie Calmine S.=
+A de Charleville</span><span style=3D"font-size:16px;font-family:sans-serif=
+" role=3D"presentation" dir=3D"ltr">-</span><span style=3D"font-size:16px;f=
+ont-family:sans-serif" role=3D"presentation" dir=3D"ltr">M=C3=A9zi=C3=A8res=
+ figurait trois salari=C3=A9s de nationalit=C3=A9 Roumaine sans contrat de =
+trav</span><span style=3D"font-size:16px;font-family:sans-serif" role=3D"pr=
+esentation" dir=3D"ltr">ail.</span></span><span class=3D"gmail-markedConten=
+t" id=3D"gmail-page152R_mcid77"><br role=3D"presentation"><span style=3D"fo=
+nt-size:16px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">Cett=
+e accusation est grave. La soci=C3=A9t=C3=A9 peut =C3=AAtre condamn=C3=A9e =
+pour cela. Nous n=E2=80=99=C3=A9tions</span> <span style=3D"font-size:16px;=
+font-family:sans-serif" role=3D"presentation" dir=3D"ltr">pas au courant de=
+ cela au niveau de la direction g=C3=A9n=C3=A9rale</span></span>
+
+</div>
+
+--0000000000004b1d9505e062c115--

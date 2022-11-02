@@ -1,0 +1,132 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp3977050ila;
+        Wed, 1 Jun 2022 02:25:38 -0700 (PDT)
+X-Received: by 2002:ac2:4888:0:b0:478:669a:1762 with SMTP id x8-20020ac24888000000b00478669a1762mr35639280lfc.245.1654075537820;
+        Wed, 01 Jun 2022 02:25:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654075537; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fGKKlnBBTtswmrThTZtvFQpKTQ8j4i9VlgbVQJUY+FJIm3/rIyDDlafZhyA1kAO9Um
+         JUPjv9V854ImzjFEUlKV1yh53GSMFv51FNBme72rPo2cntlFkm01qheEXlHBYDkMGU+w
+         46nleCHeA5F786YZMK20aIH7sx/47G7tPYKMlKTSnsM3yH+IGCQlXvRZ3GzioauljMaG
+         20rQJlwlCUJ5bzmOc0c3k4hPZipvmU7lqF6YY0BWbgt0EQ0bPrPZd9h2pDPvxiyjexzl
+         dp7cNoPpy3QDsAAvUUn43JPH3PvFFs2gs3botWwYAtfA9FOAbcGOfOLoVzOjuUTrbxw3
+         XQyA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=JXTkyNOAvsa8+I/TweeX+djq+0yBDKaLM/N46SslFuI=;
+        b=tUP78PofZr+zFo+Z6/vuJ5Zwok+Pt+CG0Dpe+gJRTZM8Nc9lTWCeqlzun26pPsaYWJ
+         VJWgvTJmW7x5iYrkXaU/NAo4TN1AtjhnUEnjjOrS17XF7OO3LpjY5lyTzoHyyWjBb9bz
+         +EWI13hRj1bxt3EwZHjlPQ1XC62m2bGbY3Kt5ElXQ20hCtO1DXJFK/Z645jmBpZzWKyO
+         vRt7iVa8p2L4HjOQaXvqGyQNUWd6rWvJ5mCNM6/R3WnbVLd5p3EjG8NRnXB7GAt7iwYY
+         zZzHxrahPDTxmdpi6R6r4R4rh6NcuArEHWTL84LAoX7obl9yWmm5KM0WXYWhDTZPuEl+
+         a72g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=hlf96kDB;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id g3-20020ac25383000000b00478f9186f9asor266010lfh.151.2022.06.01.02.25.37
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 02:25:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=hlf96kDB;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=JXTkyNOAvsa8+I/TweeX+djq+0yBDKaLM/N46SslFuI=;
+        b=hlf96kDBC82O58HPSZoDPN1QCaayLZcBq3ROTrQltApIp+ZT3Q0+KSUeMQPV93jLXR
+         fKVkdZRQosR8N2uVqDFlKIMsDnJ7kfoxsa+8P2m+Kc38fW+xed/0igeoV4dnNFDW/00X
+         KFYmxnrhfw/7fKYza7t2GOImsprBIdezXcwiC1jr/Hjj3LRBXfY+3VeRWmt6hNagHEdV
+         Ox4ur7WNiZ4DmuRwiFWo7aHpPThqTKU/qIyc0lOh0rCiP0714aDplVtREA4KQBnNaPiM
+         6FubTOHue9CNSndaQRRn/6kajhdE4J3DCiY6PmUc15LeMjRx00PWW8ljj27asc6bd4Ir
+         HlNg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=JXTkyNOAvsa8+I/TweeX+djq+0yBDKaLM/N46SslFuI=;
+        b=6JMBPQ22aH4vUJlTFIgVnCoCB2P1i5DXLvatsk8k6MRknoi0aqR/hcmqtlwapPyqZZ
+         w1dW+PiqOulpcDJGKEqMqBc3VWiMgCaJgzLSC2BSqg00UpE2yONdbBNYZh38sNaaQ6fT
+         ckf/X9wgnIZfWzQaGChcM0CGr0vn0bPjXzbW+3m4VuOBm5T0HO9nkqaziUSxpsFx9NS4
+         US0QjQ2XG6ghDZD6qtsDsrBXfQ64LmUbpeUyJxezoNwwfMWsM/KExBDYlmyfvi8Adf85
+         0ds6FbKcDiMeHAdT155x18IILbz/KbCKJRWxz+adqoBd07h8J/iepGJAgfNBUWzgnbxJ
+         4f0Q==
+X-Gm-Message-State: AOAM533d51MZhvI24qjPAgv1W+9KGBFAWyy4O5IokapG6U0NgpzspQla
+	uBrj5/lCxbheccg6uc6V/BGw5E5KilUQC6zzoji34IMKTofuWg==
+X-Google-Smtp-Source: ABdhPJyzayfsB++sqZli/jMOiCxMWjDcpyhLHa/hzasZV6qGE/W9DBvDhFkQPpOjIpVoaDLyJjnoXTrB5BWtkFvwLRg=
+X-Received: by 2002:a05:6512:2a92:b0:477:bbff:fc3a with SMTP id
+ dt18-20020a0565122a9200b00477bbfffc3amr45390969lfb.544.1654075537480; Wed, 01
+ Jun 2022 02:25:37 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 11:25:26 +0200
+Message-ID: <CAJ592SpxptXZs354MotNOs-W-fDUvaKtwOam6c67NJvc95qDLQ@mail.gmail.com>
+Subject: =?UTF-8?Q?cr=C3=A9ation_d=27une_fiche_donnant_une_conduite_=C3=A0_tenir_?=
+	=?UTF-8?Q?concernant_la_communication_interne_dans_notre_entreprise?=
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000d7df6005e05f7854"
+
+--000000000000d7df6005e05f7854
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Mme BOQUET vient de nous appeler =C3=A0 nouveau. Des journalistes sont d=
+=C3=A9j=C3=A0
+devant sa
+porte. Elle demande aide et assistance. Pour l=E2=80=99heure, nous lui avon=
+s dit de
+s=E2=80=99enfermer
+chez elle et de ne pas r=C3=A9pondre aux sollicitations.
+Rapidement, r=C3=A9digez une fiche donnant une conduite =C3=A0 tenir concer=
+nant la
+communication interne dans notre entreprise et nous la transmettre pour
+12h15 =C2=BB. Il ne s=E2=80=99agit pas
+d=E2=80=99un communiqu=C3=A9 mais d=E2=80=99une fiche expliquant la strat=
+=C3=A9gie =C3=A0 adopter dans le
+domaine
+de la communication interne
+
+--000000000000d7df6005e05f7854
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page128R_mcid13"><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r">Mme BOQUET vient de nous appeler =C3=A0 nouveau. Des journalistes sont d=
+=C3=A9j=C3=A0 devant sa</span><br role=3D"presentation"><span style=3D"font=
+-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">porte.=
+ Elle demande aide et assistance. Pour l=E2=80=99heure, nous lui avons dit =
+de</span><span style=3D"font-size:20px;font-family:sans-serif" role=3D"pres=
+entation" dir=3D"ltr"> </span><span style=3D"font-size:20px;font-family:san=
+s-serif" role=3D"presentation" dir=3D"ltr">s=E2=80=99enfermer</span><br rol=
+e=3D"presentation"><span style=3D"font-size:20px;font-family:sans-serif" ro=
+le=3D"presentation" dir=3D"ltr">chez elle et de ne pas r=C3=A9pondre aux so=
+llicitations.</span></span><span class=3D"gmail-markedContent" id=3D"gmail-=
+page128R_mcid14"></span><span class=3D"gmail-markedContent" id=3D"gmail-pag=
+e128R_mcid15"><br role=3D"presentation"><span style=3D"font-size:20px;font-=
+family:sans-serif" role=3D"presentation" dir=3D"ltr">Rapidement, r=C3=A9dig=
+ez une fiche donnant une conduite =C3=A0 tenir concernant la communica</spa=
+n><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentatio=
+n" dir=3D"ltr">tion interne dans notre entreprise et nous la transmettre</s=
+pan><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentat=
+ion" dir=3D"ltr"> </span><span style=3D"font-size:20px;font-family:sans-ser=
+if" role=3D"presentation" dir=3D"ltr">pour 12h15</span><span style=3D"font-=
+size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr"> </span=
+><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation=
+" dir=3D"ltr">=C2=BB. Il ne s=E2=80=99agit pas</span><br role=3D"presentati=
+on"><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentat=
+ion" dir=3D"ltr">d=E2=80=99un communiqu=C3=A9 mais d</span><span style=3D"f=
+ont-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">=E2=
+=80=99une fiche expliquant la strat=C3=A9gie =C3=A0 adopter dans le domaine=
+</span><br role=3D"presentation"><span style=3D"font-size:20px;font-family:=
+sans-serif" role=3D"presentation" dir=3D"ltr">de la communication interne=
+=C2=A0</span></span>
+
+</div>
+
+--000000000000d7df6005e05f7854--

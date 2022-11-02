@@ -1,0 +1,140 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp3900377ila;
+        Tue, 31 May 2022 23:29:16 -0700 (PDT)
+X-Received: by 2002:ac2:4f10:0:b0:477:bdc3:fd84 with SMTP id k16-20020ac24f10000000b00477bdc3fd84mr46887058lfr.184.1654064956429;
+        Tue, 31 May 2022 23:29:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654064956; cv=none;
+        d=google.com; s=arc-20160816;
+        b=r+8pzoYSyY56woPiJw/FTwwwjpOoHm0i8SElIwqRdDGTJSXoUCaOiN2WEQKbMb6YZe
+         1BWNM4l1tBvzULyW9uppBxjBnhmUAG5hS2XkARXY0+OnvA6PboVnB4uFfnM4rKAAnBJr
+         PFUIlhE3K0CGr5v2+RlCoTbeZIahwdoxsoyKwJH5d9veuRc1ryTbocnpoDiq3z6Wwpy1
+         mbHjDKSe0m4LCJgexcOdD1BJ+nZ7mcKRWuAxFaf2DicsV9SzdLb+ymOfIUaUhGkQFBCc
+         ZBMMH6U3mCqIUFl1vn3hWYrGAb21/EXMTzyV8d9kBVlzEmnMYCXJJ9IHIGLl6u/Dxgjf
+         xSxg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Vnmj8fE45KO67dT+YZnks6c4SnFwSKcj/PXp8pthCS8=;
+        b=zZBvcOWst2fUgWV29hFMS4QNf4jz0o7ZXFIglLXNUMzqsPFt8DgILwKNTJvfFWfSN4
+         oQCDWsfMqC0elXJEBq8VPE1EVIAJFNcQxonicoCTlFADEXoGDkzH9Stca6/+kWh3snu8
+         EftsHfu55n0JK4ncxAPQvZe1Y1QGA6JtYNGdcojdZ0qa6/fzO0PEercdts4xyRutQH8S
+         /3APL+CKhIm8l40fYQXfc5VG4ixsw7YbHipKBTumqO74NsanKoHnw93KECMgtGFhE1Su
+         NTDW7QmdpC7XMc798wB9hvZbcqBM9Jw6OCJC+TXYX2BKgwTx/OIKBMlf9h380DWzARsr
+         hdhg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=RLeoyjWt;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id u3-20020ac248a3000000b004718d41bf6dsor176962lfg.20.2022.05.31.23.29.16
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Tue, 31 May 2022 23:29:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=RLeoyjWt;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Vnmj8fE45KO67dT+YZnks6c4SnFwSKcj/PXp8pthCS8=;
+        b=RLeoyjWtQPEFt0raxMeGgMkKSL4rRh0Jh7NVQ6PRFcYhzIi0aB8JFaga4DybTaZfj8
+         +j9ijneQCZ8wJWyvXfDC3swizCSvljXhOlJzVpWUQwsdBIbwz2I/ja/EwTYqXCjws6AS
+         WXhzree0PkkfMLxNE5nbYmzV7Xb8dX1BBEW3HJMMZRKTdlkmkeAR3897AzBP2a6CL8y9
+         w1681iHyzQAiyLa1/D1MfK1dFN1rPYnhExEjD268f+Buom+SpyWyzLxSvg2uyRx381Xr
+         fE2MVOde4pcba+6/vZE/vvXWbMZJvXSAsXzhmWX1qVEw2+Ue1fUDftrG1arWNM3gjIqU
+         FJNw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Vnmj8fE45KO67dT+YZnks6c4SnFwSKcj/PXp8pthCS8=;
+        b=ylV/XnLR833x0uqM2c45Q3+GXQBxhf2Hhw2xvpJkiowo2f5MwMBJCJ7h/LjW32TjXS
+         84FfsV6h6gqvnJOcjwfOZHvJ9QjNDlKl/BTYE9xZzIki6QtJr1prEEdTWKAcjFWfi/Oi
+         /RotlYKeAcyw2Ue9LzR4LGiJXEHmwsLJJlaQEmNHm047ZJXontvtkNr8O2C9hubMcMWf
+         DV/5fliWYoMAg+kmekr4v5YDRBMaJ8fR48G3lDmSp4wCip51qNmWkgK8xDILLWDzrHco
+         cWUYUM0eClX6XGzjXxt0v96LFHmJ5kbuunmMImMTPi6qZ48bZn123hVNm7cXaQPCkA84
+         X3YQ==
+X-Gm-Message-State: AOAM531gcqnh6cDP8cD0M+xw3YagPCRa+cX95mMgvEUOFrxWGEQ0dXU3
+	ZrrVrzZByjPQv5HsyxD0h+Qs9aRqtAG5Cls56E3hhxsGgScRPA==
+X-Google-Smtp-Source: ABdhPJzp21P7UBtK3DzVLwsJHbk9eVJNC1VlpofCy4Zip2aXqhltI4nGZmINIJ08MqULxkzBMp+MpcRb9gSs039C1lI=
+X-Received: by 2002:ac2:4825:0:b0:477:c57f:8ae7 with SMTP id
+ 5-20020ac24825000000b00477c57f8ae7mr45271909lft.161.1654064955909; Tue, 31
+ May 2022 23:29:15 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 08:29:04 +0200
+Message-ID: <CAJ592Sq5Uah5xHLcawzyyKqPiFecrqjMeUVG0QyOjLkcGg7fOg@mail.gmail.com>
+Subject: =?UTF-8?Q?pr=C3=A9paration_d=27une_note?=
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000021ea6c05e05d0206"
+
+--00000000000021ea6c05e05d0206
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Nous rencontrons de grosses difficult=C3=A9s pour obtenir des informations=
+. Le
+directeur de
+l=E2=80=99unit=C3=A9 ne r=C3=A9pond toujours pas, nous tentons de joindre l=
+e directeur-adjoint
+qui n=E2=80=99est
+pas d=E2=80=99astreinte =C2=BB. Nous avons r=C3=A9ussi =C3=A0 entrer en con=
+tact avec le concierge.
+Il est tr=C3=A8s
+choqu=C3=A9, il a =C3=A9t=C3=A9 pris en charge par les pompiers. Selon lui =
+il y aurait
+plusieurs morts.
+Pr=C3=A9parez rapidement une note apportant un premier =C3=A9clairage sur l=
+a
+situation en lis-
+tant les cons=C3=A9quences envisageables. Adressez ce travail au secr=C3=A9=
+tariat pour
+09h00,
+heure limite
+
+--00000000000021ea6c05e05d0206
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page105R_mcid5"><span style=
+=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr=
+"> </span><span style=3D"font-size:20px;font-family:sans-serif" role=3D"pre=
+sentation" dir=3D"ltr">Nous rencontrons de grosses difficult=C3=A9s pour ob=
+tenir des informations. Le directeur de</span><br role=3D"presentation"><sp=
+an style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" di=
+r=3D"ltr">l=E2=80=99unit=C3=A9 ne r=C3=A9pond toujours pas, nous tentons de=
+ joindre le directeur</span><span style=3D"font-size:20px;font-family:sans-=
+serif" role=3D"presentation" dir=3D"ltr">-</span><span style=3D"font-size:2=
+0px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">adjoint qui n=
+=E2=80=99est</span><br role=3D"presentation"><span style=3D"font-size:20px;=
+font-family:sans-serif" role=3D"presentation" dir=3D"ltr">pas d=E2=80=99ast=
+reinte</span><span style=3D"font-size:20px;font-family:sans-serif" role=3D"=
+presentation" dir=3D"ltr"> </span><span style=3D"font-size:20px;font-family=
+:sans-serif" role=3D"presentation" dir=3D"ltr">=C2=BB. Nous avons r=C3=A9us=
+si =C3=A0 entrer en contact avec le concierge. Il e</span><span style=3D"fo=
+nt-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">st t=
+r=C3=A8s</span><br role=3D"presentation"><span style=3D"font-size:20px;font=
+-family:sans-serif" role=3D"presentation" dir=3D"ltr">choqu=C3=A9, il a =C3=
+=A9t=C3=A9 pris en charge par les pompiers. Selon lui il y aurait plusieurs=
+ morts.</span></span><span class=3D"gmail-markedContent" id=3D"gmail-page10=
+5R_mcid6"><br role=3D"presentation"><span style=3D"font-size:20px;font-fami=
+ly:sans-serif" role=3D"presentation" dir=3D"ltr">Pr=C3=A9parez rapidement u=
+ne note apportant un premier =C3=A9clairage sur la situation en lis-</span>=
+<br role=3D"presentation"><span style=3D"font-size:20px;font-family:sans-se=
+rif" role=3D"presentation" dir=3D"ltr">tant les cons=C3=A9quences envisagea=
+bles. Adressez ce travail au secr=C3=A9tariat</span><span style=3D"font-siz=
+e:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr"> </span><s=
+pan style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" d=
+ir=3D"ltr">pou</span><span style=3D"font-size:20px;font-family:sans-serif" =
+role=3D"presentation" dir=3D"ltr">r 09h00</span><span style=3D"font-size:20=
+px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">,</span><br ro=
+le=3D"presentation"><span style=3D"font-size:20px;font-family:sans-serif" r=
+ole=3D"presentation" dir=3D"ltr">heure limite</span><span style=3D"font-siz=
+e:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr"></span></s=
+pan>
+
+</div>
+
+--00000000000021ea6c05e05d0206--

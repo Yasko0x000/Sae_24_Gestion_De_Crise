@@ -1,0 +1,200 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp3990635ila;
+        Wed, 1 Jun 2022 02:55:06 -0700 (PDT)
+X-Received: by 2002:a19:2d19:0:b0:478:ae7c:cd5d with SMTP id k25-20020a192d19000000b00478ae7ccd5dmr24168733lfj.385.1654077306172;
+        Wed, 01 Jun 2022 02:55:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654077306; cv=none;
+        d=google.com; s=arc-20160816;
+        b=O5v1Uve41Hsv7FHmBb8NupRYdlu/KAL/XRarVlhEcUFXQjlhHaS7llm/lWeyl5mphk
+         bZK1YAEFzmemlgr+cD9x9vTVe+UxQ4f+i8vHf8CuE9aELf2Qdv+tq3uF94BzhO2DMMFd
+         pY8beD7AHF96zEBxnN1glpARMQTPZGQ1YBkx4bSlfOPbgOB1xMpa6BzZ6lmoX/Iyg73k
+         0me/pL/C+xCuas2OfcvxkGxWzqR27Sf8cZkJbyhM28oZNyHJ9X7AovqUUb2N6+gLPdEh
+         KMKvaMN1Xpxn0kyrniv/CS9W9MuCH4aWwTJPYe0kgPKzDbMR5aGzLYk4f0h7UMl9vce1
+         w9Xw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=hOJmhxPhmjcmfQflwNAcbafaq+NtyqlvRLp2WMyMbGU=;
+        b=NqSZw1XsoPMGFYkWjBP1HlTdf/mYLYdJXXyC1q7Yq2ojyk/8EL2RbHUkNzLWDBMXfZ
+         XLPKO8EvkVx1JcvLlh7x/7LjTKkY9OP7rDlZICsB+VqV/P8zSAxd9moBVaVcQgwENQXU
+         yFE1MRh3aK6Ofs7d9xZGYqMzKMDjU9aal1Br6fCpN8GZuYGOvofnU6VhWbdg8jtu3U5O
+         VmFm57jrBi9cVwO+vzfcdwthK7lFwCeLmM6ZTGtVrTCApY3raCUecBoEaWjTB53PtO52
+         Jtndo5tnTdRDzyOedr+5gqoMjdQR1q/pw7KxDGbnmmRwZU9gsPvdZxHZOeVZ7IvYvwa6
+         kPvA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=LFZuqwYu;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id f16-20020a05651201d000b00473d8adb177sor161312lfp.103.2022.06.01.02.55.06
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 02:55:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=LFZuqwYu;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=hOJmhxPhmjcmfQflwNAcbafaq+NtyqlvRLp2WMyMbGU=;
+        b=LFZuqwYuqq8jHP9+MR/tDysTbO2vunoZVs2MMbZDovpBd3yWKRZXyS2K0GoFUBZRYh
+         k9ZRkb8hMQ0k7b3ooggXlcvWCjSipSzn/gHcsypRRAC10KcwzGokTKVWtJNpUCy0XKVN
+         tuvn24NQpUTSGV2keIutLQkC4piDXO7j21dEIItW5IkWr3Xblf/tU9Pxie1dY1bvPfYL
+         6n5LKvl6JU/a5BTBmZyWsRaSdovGqXg2P7XBFr0rvixHDl4jdKtV0mdQOekCGAlUSKYB
+         t7xRmS72oRKxY9kzMx576at7UlDxeCJLf652wTjydlOX4hSaMf0gh40TSDxre69JCKwE
+         3ZJQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=hOJmhxPhmjcmfQflwNAcbafaq+NtyqlvRLp2WMyMbGU=;
+        b=q4hLT/S97Qr5z96geJf4kwPWMOkgVjcShmzlOAmqPEZ3Cag3LoZJaIGuEOA770h4+T
+         C1CCmWMwrKK5lPMK/Lp8uQoW0PciEzOOxFPTuiaKW8wUcI9pG61BH/P8pOPH1xAubKdv
+         iBMZWV+l8jm82hhTn9sQ589TPa6PQPAMImbrFtkHRyq6GoIgIYcjMkQJppZES8YW+W2D
+         McumBkK1Nb9sCSLHh/ZMRyVEbTSJP3cHTVlaWis3f4gakwgw4wQnh2GTCV33N1DYpWjJ
+         OZ32vSYcTLaeruLAAohAQiU5fp55nSodGjCGdUdc5Y3EllCI3GCSb/2l96gRSVDQdvVZ
+         Wg1g==
+X-Gm-Message-State: AOAM530NEQrLRaTNesbSvmZvtHLNwXesMdjMNothNRkwmXt2/pxVpFrB
+	R8RNsGXm7DdQQxjs4ZRDBUBi3U1EDgUH3yGDpjtTB5Pvakm9jg==
+X-Google-Smtp-Source: ABdhPJxob/hzMZAlq2pi8e2/D2EF8jN7Yb0QL6FZDjCHYuOxSM0wEOs2K3NrKit/z7hNsjwhh84Ls2MpTawVJJuVHOY=
+X-Received: by 2002:a05:6512:2807:b0:477:b906:81af with SMTP id
+ cf7-20020a056512280700b00477b90681afmr47789577lfb.299.1654077305819; Wed, 01
+ Jun 2022 02:55:05 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 11:54:54 +0200
+Message-ID: <CAJ592Sp-mA13ZSjMD=1afkbCbAn3+5ixo0eMO5d=596xfUNYxg@mail.gmail.com>
+Subject: info
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000003e95a305e05fe2bf"
+
+--0000000000003e95a305e05fe2bf
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Le journal L=E2=80=99UNION relate l=E2=80=99explosion sur son site interne=
+t en pr=C3=A9cisant
+qu=E2=80=99un accident
+grave =C3=A9tait d=C3=A9j=C3=A0 survenu il y a quatre ans.
+Le journaliste relate un incident qualifi=C3=A9 de =C2=AB tr=C3=A8s rare =
+=C2=BB par l'Autorit=C3=A9
+de S=C3=BBret=C3=A9 du Nu-
+cl=C3=A9aire ayant eu lieu il y a quatre ans dans notre usine de
+Charleville-M=C3=A9zi=C3=A8res.
+Cet ac-
+cident ayant entra=C3=AEn=C3=A9 la contamination de six personnes (deux sal=
+ari=C3=A9s de
+l=E2=80=99entreprise,
+deux salari=C3=A9s d=E2=80=99un sous-traitant prestataire de service de l=
+=E2=80=99entreprise
+CEGELEM et deux
+experts de l'Institut de radioprotection et de s=C3=BBret=C3=A9 nucl=C3=A9a=
+ire (IRSN).
+Op=C3=A9r=C3=A9e par un
+robot t=C3=A9l=C3=A9command=C3=A9, la r=C3=A9paration d'un gammagraphe, app=
+areil qui contr=C3=B4le
+la qualit=C3=A9
+des soudures de pi=C3=A8ces de m=C3=A9tal, avait provoqu=C3=A9 une fuite de=
+ cobalt 60. Les
+six per-
+sonnes avaient =C3=A9t=C3=A9 contamin=C3=A9es, sans que leur sant=C3=A9 n'i=
+nspire de
+l'inqui=C3=A9tude, d'apr=C3=A8s
+l'IRSN. Cette affaire est ancienne mais faut-il communiquer sur ce sujet
+qui ressort dans
+l=E2=80=99actualit=C3=A9 ? Merci de bien vouloir =C3=A9tablir une fiche d=
+=E2=80=99analyse en
+pr=C3=A9cisant les avantages
+et les inconv=C3=A9nients de communiquer ou non sur ce sujet. A transmettre=
+ au
+secr=C3=A9tariat
+pour 12h45
+
+--0000000000003e95a305e05fe2bf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page130R_mcid6"><span style=
+=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr=
+"></span><span style=3D"font-size:20px;font-family:sans-serif" role=3D"pres=
+entation" dir=3D"ltr">Le journal L=E2=80=99UNION relate l=E2=80=99explosion=
+ sur son site internet en pr=C3=A9cisant qu=E2=80=99un accident</span><br r=
+ole=3D"presentation"><span style=3D"font-size:20px;font-family:sans-serif" =
+role=3D"presentation" dir=3D"ltr">grave =C3=A9tait d=C3=A9j=C3=A0</span><sp=
+an style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" di=
+r=3D"ltr"> </span><span style=3D"font-size:20px;font-family:sans-serif" rol=
+e=3D"presentation" dir=3D"ltr">survenu il</span><span style=3D"font-size:20=
+px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr"> </span><span =
+style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=
+=3D"ltr">y a quatre ans.</span></span><span class=3D"gmail-markedContent" i=
+d=3D"gmail-page130R_mcid7"><br role=3D"presentation"><span style=3D"font-si=
+ze:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">Le journa=
+liste relate un incident qualifi=C3=A9 de =C2=AB</span><span style=3D"font-=
+size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr"> </span=
+><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation=
+" dir=3D"ltr">tr=C3=A8s rare</span><span style=3D"font-size:20px;font-famil=
+y:sans-serif" role=3D"presentation" dir=3D"ltr"> </span><span style=3D"font=
+-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">=C2=BB=
+ par l&#39;Autorit=C3=A9 de S=C3=BBret=C3=A9 du Nu-</span><br role=3D"prese=
+ntation"><span style=3D"font-size:20px;font-family:sans-serif" role=3D"pres=
+entation" dir=3D"ltr">cl=C3=A9aire ayant eu lieu il y a qu</span><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r">atre ans dans notre usine de Charleville</span><span style=3D"font-size:=
+20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">-</span><spa=
+n style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=
+=3D"ltr">M=C3=A9zi=C3=A8res. Cet ac-</span><br role=3D"presentation"><span =
+style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=
+=3D"ltr">cident ayant entra=C3=AEn=C3=A9 la contamination de six personnes =
+(deux salari=C3=A9s de l=E2=80=99entreprise,</span><br role=3D"presentation=
+"><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentatio=
+n" dir=3D"ltr">deux salari=C3=A9s d=E2=80=99un sous</span><span style=3D"fo=
+nt-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">-</s=
+pan><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentat=
+ion" dir=3D"ltr">traitant prestataire de service de l=E2=80=99entreprise CE=
+GELEM et deux</span><br role=3D"presentation"><span style=3D"font-size:20px=
+;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">experts de l&#39=
+;Institut d</span><span style=3D"font-size:20px;font-family:sans-serif" rol=
+e=3D"presentation" dir=3D"ltr">e radioprotection et de s=C3=BBret=C3=A9 nuc=
+l=C3=A9aire (IRSN). Op=C3=A9r=C3=A9e par un</span><br role=3D"presentation"=
+><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation=
+" dir=3D"ltr">robot t=C3=A9l=C3=A9command=C3=A9, la r=C3=A9paration d&#39;u=
+n gammagraphe, appareil qui contr=C3=B4le la qualit=C3=A9</span><br role=3D=
+"presentation"><span style=3D"font-size:20px;font-family:sans-serif" role=
+=3D"presentation" dir=3D"ltr">des soudures de pi=C3=A8ces de m=C3=A9tal, av=
+ait provoqu=C3=A9 une fuite de cobalt 60. Les six per-</span><br role=3D"pr=
+esentation"><span style=3D"font-size:20px;font-family:sans-serif" role=3D"p=
+resentation" dir=3D"ltr">sonnes avaient =C3=A9t=C3=A9 contam</span><span st=
+yle=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"=
+ltr">in=C3=A9es, sans que leur sant=C3=A9 n&#39;inspire de l&#39;inqui=C3=
+=A9tude, d&#39;apr=C3=A8s</span><br role=3D"presentation"><span style=3D"fo=
+nt-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">l&#3=
+9;IRSN.</span><span style=3D"font-size:20px;font-family:sans-serif" role=3D=
+"presentation" dir=3D"ltr"> </span><span style=3D"font-size:20px;font-famil=
+y:sans-serif" role=3D"presentation" dir=3D"ltr">Cette affaire est ancienne =
+mais faut</span><span style=3D"font-size:20px;font-family:sans-serif" role=
+=3D"presentation" dir=3D"ltr">-</span><span style=3D"font-size:20px;font-fa=
+mily:sans-serif" role=3D"presentation" dir=3D"ltr">il communiquer sur ce su=
+jet qui ressort dans</span><br role=3D"presentation"><span style=3D"font-si=
+ze:20px;font-family:sans-serif" role=3D"presentation" dir=3D"ltr">l=E2=80=
+=99actualit=C3=A9</span><span style=3D"font-size:20px;font-family:sans-seri=
+f" role=3D"presentation" dir=3D"ltr"> </span><span style=3D"font-size:20px;=
+font-family:sans-serif" role=3D"presentation" dir=3D"ltr">?</span><span sty=
+le=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"l=
+tr"> </span><span style=3D"font-size:20px;font-family:sans-serif" role=3D"p=
+resentation" dir=3D"ltr">Merci de bien vouloir =C3=A9tablir une fiche d=E2=
+=80=99analyse en pr=C3=A9cisant les avantages</span><br role=3D"presentatio=
+n"><span style=3D"font-size:20px;font-family:sans-serif" role=3D"presentati=
+on" dir=3D"ltr">et les inconv</span><span style=3D"font-size:20px;font-fami=
+ly:sans-serif" role=3D"presentation" dir=3D"ltr">=C3=A9nients de communique=
+r ou non sur ce sujet. A transmettre au secr=C3=A9tariat</span><br role=3D"=
+presentation"><span style=3D"font-size:20px;font-family:sans-serif" role=3D=
+"presentation" dir=3D"ltr">pour 12h45</span><span style=3D"font-size:20px;f=
+ont-family:sans-serif" role=3D"presentation" dir=3D"ltr"> </span><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r"></span></span>
+
+</div>
+
+--0000000000003e95a305e05fe2bf--

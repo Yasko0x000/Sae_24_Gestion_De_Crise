@@ -1,0 +1,93 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp4040310ila;
+        Wed, 1 Jun 2022 04:30:25 -0700 (PDT)
+X-Received: by 2002:a19:9149:0:b0:477:ad45:1c49 with SMTP id y9-20020a199149000000b00477ad451c49mr47105887lfj.688.1654083025174;
+        Wed, 01 Jun 2022 04:30:25 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654083025; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lH8CSS13KCdHl0/RfPUgo6GuTML3u3M/4SQR6WNKYtRGkAB1l/FefXVi7OuS1F2THV
+         2ovIKu8lBKbZe/9yRGAxhjxBvMVQ/9D6MJoys3F0H17EqWBcTGvxiIz6EcIoZVRP038q
+         JgtCvotIrakVP42iUb/RpgDA+BKKw1cG7Aba/pN1RE8Wgz6hFK3tfbPvKTAIzgEh6zuU
+         FtiofoYwUPXmy4QWkPYnHNr7WrL4K6BK+mJhhDnm/SJQZ2SksF+6ZwaR4xyVqBGS2WKK
+         IytvzO6HsA7bQ3iIfBCAUt3P5eZx+enORMBIlRz5QlKVk55WLR5i9ElOKPjtccFPOwVi
+         MVlQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=mPcunnPcSO32C/BkJ5SX1YDkZvFXGE9eTInmCNRqgds=;
+        b=V427XZ5v6jZogkqwV78AYpU5AsACY6Iob413XeTKLf2Kv8JvNDpv0da+XFgIgz4DUW
+         C8tOTefDwT2hRbwl6X1eoA4RM48oz7/n+hzRk8xWzRU1Rvyj/WfVvAU/MrL55mIInYVq
+         7cGyd01Y05wtQks6oYlP7BWvMXI5jJ/ANu+mBrcBFlcNfxHwIwx7AckNOJoUehyV5wGs
+         EHsKDpUJHummCFQ6goDXJ+zqNbMwJ5vgHJKF046p0zfCR+fasz+dKkrVfKyRl+eq/2cK
+         qS8hsMYKg2gv93W6TL+mXsEi63CxJGLcc0zH77AMYv4LkPA3G/aw0om0db2N1bjFcbSx
+         KLpA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="it/hSc5e";
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 27-20020a2e165b000000b00255569ac885sor600595ljw.47.2022.06.01.04.30.25
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 04:30:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="it/hSc5e";
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=mPcunnPcSO32C/BkJ5SX1YDkZvFXGE9eTInmCNRqgds=;
+        b=it/hSc5eXQMKy3uBivJRLt2UNopGZbnDV+Y7KsEMA2CBQStMmINW9GHf1SsxFEfoLX
+         4B6sPT4ZrsyUrWtSfD8uOZGR8mIA0c4o24KQIeHtb/u38OZfAKSIVWTsd9lejxKldOH1
+         z08p941pbeSee4kC5+9F40lSVtKKYXuY36tAXt+kL6CK0b1FwfRDVqEKfTedzp0aftJT
+         k2l8ZGjjQXiUL7JOZ4pJEdTXcPpqNoVfUJVJdpZxJbk7EsxxW1HyNeIkOrKvBgE7ymkr
+         ZoW2BaRl8kcOSDwtEAKrjT5yOp5FaskQHCY1cyI57kUcBahoWB7QZLZyEJ0Eu6GvMdnJ
+         knFw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=mPcunnPcSO32C/BkJ5SX1YDkZvFXGE9eTInmCNRqgds=;
+        b=ywGMGKHDO+NGvg1bh3i+gVrlKkt17cWrSS+AsuxXwwycZ2sQ85JehfW3ftCwdCfL5T
+         97jCpHQvuStRZBavmUneOgNS2i5DlkXjHtTRa8tuknK3SkgFl4E1Uzk5D1opxZaVzsfw
+         WVLwS51vxpPOP5deQ2xZwWA76WAbfsWZOF0uI/OodoQVQSJ3NiG54FPMYzvoVStYUQc1
+         aPwUtdS0QE3yphJvvicwi3IOhDUtCwbGo4N08lPAYGRuSw3Gz7eol9SR/sZHE6MnN1xL
+         JSKkcR4n46vBQ5yPUZo4wFclYgVp455P1b4si9wevbMVWuP8dVNhbR2nOm1aX8WbL9qq
+         IbYA==
+X-Gm-Message-State: AOAM533HKdYRT6notOOw9jWp/uOMqf4r/mvcN8t+G49LTh7+guUrvwY2
+	k318in7MXC+qfZ5wMkAVWmKqQ052+03kHiaMEkKk8kVUaMZ7Mw==
+X-Google-Smtp-Source: ABdhPJzG0j7g6w+6JoJravnsKXzC9fE0G9QJdNomHtdvqQIOqmlEQk+KANGOv84cHMu1xP0HMuIr3rUJ/0hOEW7OYmE=
+X-Received: by 2002:a2e:824e:0:b0:253:e2ee:f534 with SMTP id
+ j14-20020a2e824e000000b00253e2eef534mr33098302ljh.186.1654083024898; Wed, 01
+ Jun 2022 04:30:24 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 13:30:14 +0200
+Message-ID: <CAJ592SpwXzC6+BwjWxy6v=G79ODuVvzy9ZZgZdn4XWSC+zB1_w@mail.gmail.com>
+Subject: info suite
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000020cfdd05e06137c0"
+
+--00000000000020cfdd05e06137c0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Le site internet du journal =C2=AB L=E2=80=99ARDENNAIS =C2=BB relate le su=
+icide de M.
+BOQUET, notre directeur
+
+--00000000000020cfdd05e06137c0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page135R_mcid40"><span styl=
+e=3D"font-size:16px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r"> Le site internet du journal =C2=AB L=E2=80=99ARDENNAIS =C2=BB relate le=
+ suicide de M. BOQUET, notre</span> <span style=3D"font-size:16px;font-fami=
+ly:sans-serif" role=3D"presentation" dir=3D"ltr">directeur </span></span>
+
+</div>
+
+--00000000000020cfdd05e06137c0--

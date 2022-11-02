@@ -1,0 +1,104 @@
+Delivered-To: quatrgroupe.inicrisis@gmail.com
+Received: by 2002:a92:3f04:0:0:0:0:0 with SMTP id m4csp3938727ila;
+        Wed, 1 Jun 2022 01:00:23 -0700 (PDT)
+X-Received: by 2002:a05:6512:b1c:b0:474:193a:755c with SMTP id w28-20020a0565120b1c00b00474193a755cmr47172705lfu.340.1654070422812;
+        Wed, 01 Jun 2022 01:00:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1654070422; cv=none;
+        d=google.com; s=arc-20160816;
+        b=INiNycgVsEYH5dCawJS9vZi5miyrtJMPjY/hRzg+GTxCDzFMJ1Z+Jz2dcPjGBuX0cT
+         NxfXCAzyAYI0b9t9mSZgMUVCTU4cXHtEi4Qcif7fqP+ZR3Ne6amDl28eVdqyAmaPD8WO
+         AGvCMBTZ1N1qbyYRfVFg59wdiK3IB8kLs5OC2k7aG7DlYlFKpCDdZvVgOyzdj1bcnBnL
+         Pvfo4oNewkzQDJyUheYOEbFmr4mYCYrYU3Nvliy5U3xRjDBVeFvwnjGgumS0KkCAlOhv
+         we9LuR0cP3yfMyxKiRsLjjktIlDb2g5NBuDETJ+/Oszxdbnb5eO0oO+aBGiQmW5py2Qo
+         +iyQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=HxSm0nEg01VSzskbV1KKsOSG6svEIveTBNC/YNw5mxE=;
+        b=Yy5c1m1xk3/8r2o+60MWW862/iWQWLKq9XddmtUbOW6c91UrUcxNngbDsAqnvouj/3
+         jw7Lzv2wgfGoNt5FHBbEgdnniMpzG+jIlwO89uAIVgtQZVjpoRhfjefG05NyRaXJN4jY
+         7/aLKEr7mOHjep3yIzfrDwK/+o2ZXFFITorK3UiS0UVnogK2cTdNeNejoeUnjlCCzJjM
+         FnsiTeR7cQc16KTxuHov2JBnSoqhuRvPS4BqdG1Upuu8+LEdzFDnkNJUjl0qbZoi2BBZ
+         SV74JoNc8gNi/lOmwgPuUDV6N4mqDlf7UIFRbzNqWkUOe+uSxHxcc5ThpPpj/BaktqQt
+         ALyw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=OJ5KixrD;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <directioncrise4groupe@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id q11-20020a19f20b000000b00473a7f07da0sor246551lfh.19.2022.06.01.01.00.22
+        for <quatrgroupe.inicrisis@gmail.com>
+        (Google Transport Security);
+        Wed, 01 Jun 2022 01:00:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=OJ5KixrD;
+       spf=pass (google.com: domain of directioncrise4groupe@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=directioncrise4groupe@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=HxSm0nEg01VSzskbV1KKsOSG6svEIveTBNC/YNw5mxE=;
+        b=OJ5KixrD3/a1EEDxga2+OXbDK4XHAxI7RxUaFxJr5kDtIMiBVEa7kqSYj3i2q9UVqd
+         V9qyQMYhembdYK7rAszl2tQSknlr2DGIF5DkF1a09KRhJHNeaY4LvGwFJ5KXC9jkhg1B
+         IqgK0xMyc10LjqA+CziSyaO5xaEyyk2/rW41q2l1VVxSkVOJhiLZGW5VcJ9M29MFqJ44
+         GwlItKjL40LvgRDim55dUxs8lPWVvVM1k+M2aZ32tVINLhryumPaNgfkCoXbdb9vUhkj
+         VGebqDCfVXsXmL0BXxJFe3k6ccoCkPeDJUtUUhaeHj/tpaveqm23h8KY8HxAri6Ky2Kq
+         K0KA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=HxSm0nEg01VSzskbV1KKsOSG6svEIveTBNC/YNw5mxE=;
+        b=Aoe6FgSrpF/4amosk02hFvtOgPi2uLkGyVQn7jZx53OyMvERza6Q9PU5HNSuVWpI4J
+         b+Ypirbfrw2uyJVEmu6p9mOXN+/2vyezSzQIJCJJJtzV9krUMYCYwDsf6Rs6L9bbhb2s
+         XcnGPQj73trr7S9H0Nx5HFXC8Bm7lc7vzK508fOKXgpNCMThG+HqpWtnh7STU2aoOwdL
+         y8LIC6lRCgqcp2vWvCg7fM7/YWok9nIa8eeuO6X671Qr5HnR8zZRGjUaS7Fmx+usxUxm
+         YpCdea1BdR/0dqnGw6qPQMyD8rQ4owcxddtkgPuNrvRdyIRBlUWED3kl8qcHMneB6153
+         GxuA==
+X-Gm-Message-State: AOAM533Oi9oYOibMloaeYRe8OXIwjAnrZJn0D1HrEMXUT/yU0C004kL3
+	ngngoM+wSh6iDLhnA8Rqe6YmeBkHy4kR7UdjDTy9UmiJnLX/DA==
+X-Google-Smtp-Source: ABdhPJywLFybXoVZLmnNwYP3IuqBe8723lYc3wriHvRIJb9O2t2JZo5rmLREtByVQJRIiqXQnfbGOc/q9gN4yxVAwuE=
+X-Received: by 2002:ac2:4c53:0:b0:478:6908:c76f with SMTP id
+ o19-20020ac24c53000000b004786908c76fmr35496639lfk.634.1654070422428; Wed, 01
+ Jun 2022 01:00:22 -0700 (PDT)
+MIME-Version: 1.0
+From: Direction_groupe_vert <directioncrise4groupe@gmail.com>
+Date: Wed, 1 Jun 2022 10:00:11 +0200
+Message-ID: <CAJ592SqweC1v0K1sefskynj_boF5nWE_vkunWYXWdZ9tKTXJwA@mail.gmail.com>
+Subject: =?UTF-8?Q?travail_=C3=A0_faire?=
+To: groupe_vert_inicrisis <quatrgroupe.inicrisis@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000f65fe905e05e476b"
+
+--000000000000f65fe905e05e476b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Merci d=E2=80=99=C3=A9tablir un message =C3=A0 l=E2=80=99intention de nos =
+clients et fournisseurs
+suite =C3=A0
+l=E2=80=99explosion de notre unit=C3=A9 de Charleville-M=C3=A9zi=C3=A8res. =
+Le texte sera transmis
+par mail pour
+11h00
+
+--000000000000f65fe905e05e476b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+<span class=3D"gmail-markedContent" id=3D"gmail-page122R_mcid13"><span styl=
+e=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=3D"lt=
+r">Merci d=E2=80=99=C3=A9tablir un message =C3=A0 l=E2=80=99intention de no=
+s clients et fournisseurs suite =C3=A0</span><br role=3D"presentation"><spa=
+n style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=
+=3D"ltr">l=E2=80=99explosion de notre unit=C3=A9 de Charleville</span><span=
+ style=3D"font-size:20px;font-family:sans-serif" role=3D"presentation" dir=
+=3D"ltr">-</span><span style=3D"font-size:20px;font-family:sans-serif" role=
+=3D"presentation" dir=3D"ltr">M=C3=A9zi=C3=A8res. Le texte sera transmis pa=
+r mail pour</span><br role=3D"presentation"><span style=3D"font-size:20px;f=
+ont-family:sans-serif" role=3D"presentation" dir=3D"ltr">11h00</span></span=
+>
+
+</div>
+
+--000000000000f65fe905e05e476b--
